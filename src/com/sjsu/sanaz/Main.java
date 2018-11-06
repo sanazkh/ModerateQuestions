@@ -1,12 +1,36 @@
 package com.sjsu.sanaz;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
+        MasterMind m = new MasterMind();
+        m.masterMind("1122", "0001");
 
-       /* NumberSwapper ns = new NumberSwapper();
+
+        EnglishInt ei = new EnglishInt();
+     //   System.out.print(ei.convert(1216));
+
+
+     /*   SuffleAList suffleAList = new SuffleAList();
+        int[] res = suffleAList.suffle(new int[]{1,2,3,4,5,6,7});
+
+        for(int i : res){
+            System.out.print(i +" ");
+        } */
+
+    /* BinaryToDecimal bd = new BinaryToDecimal();
+     System.out.println(bd.binaryToDecimal("101010"));
+
+     System.out.println(bd.decimalToBinary(10));
+        System.out.println(bd.decimalToBinary(61)); */
+
+   /* Insertion in = new Insertion();
+    System.out.print(in.insertion(1000000000, 11011, 2, 7)); */
+
+        /* NumberSwapper ns = new NumberSwapper();
         ns.numberSwapper(4, 5); */
 
       /* WordFrequencies wf = new WordFrequencies();
@@ -71,5 +95,32 @@ public class Main {
         PairWithSum pws = new PairWithSum();
         res = pws.pairWithTwoSum(new int[]{1,9,6,3,4,2}, 7);
         System.out.print(res.size()); */
+
+     /* FactorialZeros fz = new FactorialZeros();
+      System.out.print(fz.factorialZeros(25)); */
+
+    /* MaxProductSubArray m = new MaxProductSubArray();
+     int[] array = new int[]{5,6,0,-1,4,-6,7};
+
+     System.out.print(m.maxProduct(array));*/
+
+  /*  TicaTacToe ttt = new TicaTacToe();
+    System.out.print(ttt.convertBoardToInt(new TicaTacToe.Piece[][]{{TicaTacToe.Piece.blue, TicaTacToe.Piece.empty,TicaTacToe.Piece.blue}, {TicaTacToe.Piece.empty, TicaTacToe.Piece.red,TicaTacToe.Piece.blue}
+    ,{TicaTacToe.Piece.blue, TicaTacToe.Piece.red,TicaTacToe.Piece.blue}}));
+    */
+  WordPattern wp = new WordPattern();
+//  System.out.print(wp.wordPattern("abba", "dog dog dog dog"));
+
+  ThreeSum ts = new ThreeSum();
+  List<List<Integer>> res = new ArrayList<List<Integer>>();
+  res = ts.threeSum(new int[]{-1, 0, 1, 2, -3, -4});
+
+ // res = ts.threeSum(new int[]{-1, 0, 1, 2, -1, -4, 6, 4, 3}, 3);
+
+  for(int i = 0; i < res.size(); i++){
+      System.out.print(res.get(i) + " ");
+  }
+
+
     }
 }

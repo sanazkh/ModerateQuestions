@@ -14,7 +14,7 @@ public class SmallestDifference {
         int b = 0;
         int min = Integer.MAX_VALUE;
         while (a < arrayA.length && b < arrayB.length){
-            int temp = Math.abs(a - b);
+            int temp = Math.abs(arrayA[a] - arrayB[b]);
             if(temp < min){
                 min = temp;
             }

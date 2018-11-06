@@ -38,7 +38,7 @@ public class SumSwap {
         }
         int sumA = calculateSum(arrayA);
         int sumB = calculateSum(arrayB);
-        int sum = (sumB - sumA) / 2;
+        int sum = Math.abs(sumB - sumA) / 2;
 
         for(int i = 0; i < arrayA.length; i++){
             int target =  arrayA[i] + sum;
