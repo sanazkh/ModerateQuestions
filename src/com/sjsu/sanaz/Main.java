@@ -6,11 +6,23 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        MasterMind m = new MasterMind();
-        m.masterMind("1122", "0001");
+        BasicCalculator bc = new BasicCalculator();
+        System.out.println("result " + bc.calculate("222*3+5/6*3+15"));
 
 
-        EnglishInt ei = new EnglishInt();
+
+      //  StringToInteger si = new StringToInteger();
+      //  System.out.println(si.myAtoi(" "));
+
+      //  ReverseBits rv = new ReverseBits();
+
+      //  rv.reverseBits(567);
+
+      //  MasterMind m = new MasterMind();
+      //  m.masterMind("1122", "0001");
+
+
+      //  EnglishInt ei = new EnglishInt();
      //   System.out.print(ei.convert(1216));
 
 
@@ -108,18 +120,18 @@ public class Main {
     System.out.print(ttt.convertBoardToInt(new TicaTacToe.Piece[][]{{TicaTacToe.Piece.blue, TicaTacToe.Piece.empty,TicaTacToe.Piece.blue}, {TicaTacToe.Piece.empty, TicaTacToe.Piece.red,TicaTacToe.Piece.blue}
     ,{TicaTacToe.Piece.blue, TicaTacToe.Piece.red,TicaTacToe.Piece.blue}}));
     */
-  WordPattern wp = new WordPattern();
+ // WordPattern wp = new WordPattern();
 //  System.out.print(wp.wordPattern("abba", "dog dog dog dog"));
 
-  ThreeSum ts = new ThreeSum();
-  List<List<Integer>> res = new ArrayList<List<Integer>>();
-  res = ts.threeSum(new int[]{-1, 0, 1, 2, -3, -4});
+ // ThreeSum ts = new ThreeSum();
+ // List<List<Integer>> res = new ArrayList<List<Integer>>();
+ // res = ts.threeSum(new int[]{-1, 0, 1, 2, -3, -4});
 
  // res = ts.threeSum(new int[]{-1, 0, 1, 2, -1, -4, 6, 4, 3}, 3);
 
-  for(int i = 0; i < res.size(); i++){
-      System.out.print(res.get(i) + " ");
-  }
+  //for(int i = 0; i < res.size(); i++){
+  //    System.out.print(res.get(i) + " ");
+ // }
 
 
     }
